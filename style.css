@@ -112,24 +112,9 @@ body a {
     box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .7);
 }
 
-#search {
-    display: none;
-    position: fixed;
-    top: 23%;
-    right: 21%;
-    cursor: pointer;
-}
-
-
-
 .bi-search:focus-within input {
     display: block;
     transform: rotateY(0deg);
-    z-index: 100;
-}
-
-.bi-search:focus-within #search {
-    display: none;
     z-index: 100;
 }
 
@@ -298,12 +283,7 @@ body a {
         width: 12rem;
         height: 4rem;
         top: 4rem;
-        right: 11rem;
-    }
-
-    #search {
-        top: 5rem;
-        right: 8.5rem;
+        right: 12rem;
     }
 
     .bag-list {
