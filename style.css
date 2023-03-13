@@ -92,6 +92,11 @@ body a {
     color: var(--text-color);
 }
 
+.bi-search {
+    cursor: pointer;
+    z-index: 100;
+}
+
 .bi-search input {
     display: none;
     position: fixed;
@@ -123,13 +128,8 @@ body a {
     z-index: 100;
 }
 
-.bi-search:focus-within .bi-search {
-    display: none;
-
-}
-
 .bi-search:focus-within #search {
-    display: block;
+    display: none;
     z-index: 100;
 }
 
@@ -269,7 +269,7 @@ body a {
     }
 
     .right-head {
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .bi-list {
@@ -295,15 +295,15 @@ body a {
 
 
     .bi-search input {
-        width: 40%;
+        width: 12rem;
         height: 4rem;
-        top: 6%;
-        right: 24%;
+        top: 4rem;
+        right: 11rem;
     }
 
     #search {
-        top: 7.5%;
-        right: 26%;
+        top: 5rem;
+        right: 8.5rem;
     }
 
     .bag-list {
