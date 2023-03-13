@@ -121,6 +121,10 @@ body a {
     display: block;
     transform: rotateY(0deg);
     z-index: 100;
+}
+
+.bi-search:focus-within .bi-search {
+    display: none;
 
 }
 
@@ -289,16 +293,17 @@ body a {
         font-size: 1.8rem;
     }
 
+
     .bi-search input {
-        width: 15rem;
+        width: 40%;
         height: 4rem;
-        top: 14%;
-        right: 19%;
+        top: 6%;
+        right: 24%;
     }
 
     #search {
-        top: 15.3%;
-        right: 22%;
+        top: 7.5%;
+        right: 26%;
     }
 
     .bag-list {
