@@ -651,12 +651,11 @@ body a {
 
 .our-products-card img {
     display: block;
-    margin: auto;
     width: 100%;
     height: 32.8rem;
-    margin: auto;
     object-fit: contain;
     object-position: center;
+    margin: auto;
 }
 
 .botton-munu-div {
@@ -776,14 +775,14 @@ body a {
 }
 
 .main-about {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     gap: 2rem;
     margin: 2rem 0rem;
 }
 
 .about-img {
     flex-basis: 50%;
-
 }
 
 .about-img img {
@@ -810,6 +809,7 @@ body a {
     font-size: 2.1rem;
     text-align: justify;
     margin: 1rem 0rem;
+
 }
 
 .about-right .about-button {
@@ -1016,6 +1016,7 @@ body a {
 .contact-manps {
     flex-basis: 50%;
     z-index: 1;
+    flex: 1 1 45rem;
 }
 
 .contact-manps iframe {
@@ -1023,6 +1024,7 @@ body a {
     width: 100%;
     height: 100%;
     z-index: 1;
+    flex: 1 1 45rem;
 
 }
 
@@ -1161,11 +1163,13 @@ body a {
     font-size: 4rem;
     color: var(--text-white-color);
     padding: 2rem 0rem;
+    overflow-wrap: anywhere;
 }
 
 .our-blog h2 span {
     font-size: 4rem;
     color: var(--text-color);
+    overflow-wrap: anywhere;
 }
 
 .our-blog-cards {
@@ -1184,6 +1188,14 @@ body a {
     margin: 2rem 0rem;
     transition: all .3s ease-in;
 
+
+
+}
+
+.blog-img-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
 }
 
 .our-blog-card:hover {
@@ -1195,8 +1207,15 @@ body a {
 .our-blog-card img {
     width: 100%;
     margin: auto;
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    object-fit: cover;
+    transition: all .3s ease-in;
+    height: auto;
+
+}
+
+.our-blog-card img:hover {
+    transform: scale(1.2);
+
 }
 
 .our-blog-card h2 {
@@ -1716,8 +1735,8 @@ body a {
 .munu-card {
     display: grid;
     flex: 1;
-    grid-template-columns: auto auto auto auto;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
 }
 
 @media (max-width:1000px) {
